@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>iOS Tutorials</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Ray Wenderlich</string>
+			<key>site</key>
+			<string>http://www.raywenderlich.com/tutorials</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Maniac Dev</string>
+			<key>site</key>
+			<string>http://maniacdev.com/ios-5-sdk-tutorial-and-guide/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Apple Developer Videos</string>
+			<key>site</key>
+			<string>https://developer.apple.com/videos/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Stanford iTunesU course </string>
+			<key>site</key>
+			<string>http://itunes.apple.com/us/itunes-u/ipad-iphone-application-development/id473757255</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Mobile Tuts+ </string>
+			<key>site</key>
+			<string>http://mobile.tutsplus.com/category/tutorials/iphone/</string>
+		</dict>
+	</array>
+	<key>Android Tutorials</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Developer@Android</string>
+			<key>site</key>
+			<string>http://developer.android.com/design/index.html</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>EDU Mobile</string>
+			<key>site</key>
+			<string>http://www.edumobile.org/android/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Vogella</string>
+			<key>site</key>
+			<string>http://www.vogella.com/tutorials.html</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Java Tutorial Hub</string>
+			<key>site</key>
+			<string>http://www.javatutorialhub.com/wiki/Java_Tutorial</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Mobile Tuts+</string>
+			<key>site</key>
+			<string>http://mobile.tutsplus.com/category/tutorials/android/</string>
+		</dict>
+	</array>
+	<key>HTML 5 Tutorials</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>HTML5 Rocks</string>
+			<key>site</key>
+			<string>http://www.html5rocks.com/en/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>W3 Schools</string>
+			<key>site</key>
+			<string>http://www.w3schools.com/html5/default.asp</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Learning WebGL</string>
+			<key>site</key>
+			<string>http://learningwebgl.com/blog/?page_id=1217</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Mozilla Developer Network</string>
+			<key>site</key>
+			<string>https://developer.mozilla.org/en/WebGL</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tripwire Magazine</string>
+			<key>site</key>
+			<string>http://www.tripwiremagazine.com/2012/03/html5-examples-tutorials.html</string>
+		</dict>
+	</array>
+	<key>CSS 3 Tutorials</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>CSS3 Generator</string>
+			<key>site</key>
+			<string>http://css3generator.com/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>W3 Schools</string>
+			<key>site</key>
+			<string>http://www.w3schools.com/css3/default.asp</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Design Your Way</string>
+			<key>site</key>
+			<string>http://www.designyourway.net/blog/resources/top-100-useful-and-detailed-css3-tutorials-and-techniques/</string>
+		</dict>
+	</array>
+	<key>Graphics Program Tutorials</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Photoshop Lady</string>
+			<key>site</key>
+			<string>http://www.photoshoplady.com/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Blender Tutorials</string>
+			<key>site</key>
+			<string>http://www.blender.org/education-help/tutorials/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Color Theory</string>
+			<key>site</key>
+			<string>http://www.colormatters.com/color-and-design/basic-color-theory</string>
+		</dict>
+	</array>
+	<key>APIs</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Java API</string>
+			<key>site</key>
+			<string>http://docs.oracle.com/javase/6/docs/api/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>iOS API</string>
+			<key>site</key>
+			<string>https://developer.apple.com/library/ios/navigation/index.html#section=Resource%20Types&amp;topic=Reference</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>JQuery API</string>
+			<key>site</key>
+			<string>http://api.jquery.com/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Facebook API</string>
+			<key>site</key>
+			<string>http://developers.facebook.com/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Twitter API</string>
+			<key>site</key>
+			<string>https://dev.twitter.com/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Google Hangouts API</string>
+			<key>site</key>
+			<string>https://developers.google.com/+/hangouts/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Google APIs</string>
+			<key>site</key>
+			<string>https://developers.google.com/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Spotify API</string>
+			<key>site</key>
+			<string>https://developer.spotify.com/technologies/apps/</string>
+		</dict>
+	</array>
+	<key>Other</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Web Appers</string>
+			<key>site</key>
+			<string>http://www.webappers.com/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Stack Overflow</string>
+			<key>site</key>
+			<string>http://stackoverflow.com/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Make</string>
+			<key>site</key>
+			<string>http://makezine.com/</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -7,7 +7,6 @@
 //
 
 #import "MasterViewController.h"
-
 #import "DetailViewController.h"
 
 @interface MasterViewController () {
@@ -16,6 +15,7 @@
 @end
 
 @implementation MasterViewController
+@synthesize allPages, allSections;
 
 - (void)awakeFromNib
 {
@@ -29,13 +29,26 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    
+    NSString * filePath = [[NSBundle mainBundle] pathForResource:@"Websites" ofType:@"plist"];
+    NSDictionary * sectionDictionary = [[NSDictionary alloc]initWithContentsOfFile:filePath];
+    self.allPages = [[NSMutableDictionary alloc]init];
+    for (int i=0; i < [allSections count]; i++) {
+        NSString * currentSection = [allSections objectAtIndex:i];
+        NSArray * temp = [sectionDictionary objectForKey:currentSection];
+        NSMutableArray * newSiteArray = [[NSMutableArray alloc]init];
+        for (NSDictionary * dictionary in temp) {
+            Website * site = [[Website alloc]init];
+            site.siteName = [dictionary objectForKey:@"name"];
+            site.urlString = [dictionary objectForKey:@"site"];
+            [newSiteArray addObject:site];
+        }
+        [allPages setObject:newSiteArray forKey:currentSection];
+    }
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -57,27 +70,39 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return [allSections count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+    //return _objects.count;
+    //Get the current Section and then get the count of the array from the dictionary
+    NSString * currentSection = [allSections objectAtIndex:section];
+    NSArray * pagesArray = [allPages objectForKey:currentSection];
+    
+    return [pagesArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
 
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    NSString * key = [allSections objectAtIndex:indexPath.section];
+    NSArray * sectionSites = [allPages objectForKey:key];
+    Website * site = [sectionSites objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = [site siteName];
     return cell;
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
-    return YES;
+    return NO;
+}
+
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    return [allSections objectAtIndex:section];
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath

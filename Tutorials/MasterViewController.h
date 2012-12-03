@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Website.h"
 
 @class DetailViewController;
 
 @interface MasterViewController : UITableViewController
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
+
+@property (strong, nonatomic) NSMutableDictionary * allPages;
+@property (strong, nonatomic) NSArray * allSections;
 
 @end

@@ -20,6 +20,8 @@
 		B25F30D5166AB2CA00E705CD /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B25F30D3166AB2CA00E705CD /* MainStoryboard_iPad.storyboard */; };
 		B25F30D8166AB2CA00E705CD /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F30D7166AB2CA00E705CD /* MasterViewController.m */; };
 		B25F30DB166AB2CA00E705CD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F30DA166AB2CA00E705CD /* DetailViewController.m */; };
+		B25F30E2166AB2EA00E705CD /* Websites.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25F30E1166AB2EA00E705CD /* Websites.plist */; };
+		B25F30E5166AB32900E705CD /* Website.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F30E4166AB32900E705CD /* Website.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,9 @@
 		B25F30D7166AB2CA00E705CD /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		B25F30D9166AB2CA00E705CD /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		B25F30DA166AB2CA00E705CD /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		B25F30E1166AB2EA00E705CD /* Websites.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Websites.plist; sourceTree = "<group>"; };
+		B25F30E3166AB32900E705CD /* Website.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Website.h; sourceTree = "<group>"; };
+		B25F30E4166AB32900E705CD /* Website.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Website.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +93,7 @@
 		B25F30BE166AB2C900E705CD /* Tutorials */ = {
 			isa = PBXGroup;
 			children = (
+				B25F30E1166AB2EA00E705CD /* Websites.plist */,
 				B25F30C7166AB2C900E705CD /* AppDelegate.h */,
 				B25F30C8166AB2C900E705CD /* AppDelegate.m */,
 				B25F30D0166AB2CA00E705CD /* MainStoryboard_iPhone.storyboard */,
@@ -97,6 +103,8 @@
 				B25F30D9166AB2CA00E705CD /* DetailViewController.h */,
 				B25F30DA166AB2CA00E705CD /* DetailViewController.m */,
 				B25F30BF166AB2C900E705CD /* Supporting Files */,
+				B25F30E3166AB32900E705CD /* Website.h */,
+				B25F30E4166AB32900E705CD /* Website.m */,
 			);
 			path = Tutorials;
 			sourceTree = "<group>";
@@ -172,6 +180,7 @@
 				B25F30CF166AB2CA00E705CD /* Default-568h@2x.png in Resources */,
 				B25F30D2166AB2CA00E705CD /* MainStoryboard_iPhone.storyboard in Resources */,
 				B25F30D5166AB2CA00E705CD /* MainStoryboard_iPad.storyboard in Resources */,
+				B25F30E2166AB2EA00E705CD /* Websites.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +195,7 @@
 				B25F30C9166AB2C900E705CD /* AppDelegate.m in Sources */,
 				B25F30D8166AB2CA00E705CD /* MasterViewController.m in Sources */,
 				B25F30DB166AB2CA00E705CD /* DetailViewController.m in Sources */,
+				B25F30E5166AB32900E705CD /* Website.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
